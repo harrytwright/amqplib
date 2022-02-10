@@ -46,6 +46,11 @@ function failCallback(done) {
   };
 }
 
+/**
+ * @param {Channel} ch
+ * @param {string} q
+ * @param {Function} k
+ * */
 function waitForMessages(ch, q, k) {
   ch.checkQueue(q, function(e, ok) {
     if (e != null) return k(e);

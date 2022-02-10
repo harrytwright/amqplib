@@ -1,8 +1,8 @@
-
 {
   "name": "amqplib",
   "homepage": "http://squaremo.github.io/amqp.node/",
-  "main": "./channel_api.js",
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "version": "0.8.0",
   "description": "An AMQP 0-9-1 (e.g., RabbitMQ) library and client.",
   "repository": {
@@ -20,6 +20,7 @@
     "url-parse": "~1.5.3"
   },
   "devDependencies": {
+    "@types/node": "^17.0.16",
     "claire": "0.4.1",
     "istanbul": "0.1.x",
     "mocha": "^3.5.3",
